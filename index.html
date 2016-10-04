@@ -14,10 +14,7 @@
 
     <title>Chip Castle Dot Com, Inc. - Website design and development</title>
 
-    <link href="css/styles.min.css" rel="stylesheet">
-
-    <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--<link href="css/styles.min.css" rel="stylesheet">-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -615,20 +612,22 @@
                 </div>
             </div>
         </div>
-    </div>
 
-	<script type="text/javascript">
-		function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "js/scripts.min.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-		else window.onload = downloadJSAtOnload;
-	</script>
+        <script type="text/javascript" src="bundle.js"></script>
+        <script type="text/javascript">
+          function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/bundle.js";
+            document.body.appendChild(element);
+          }
+          if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+          else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+          else window.onload = downloadJSAtOnload;
+        </script>
+
+    </div>
 
 </body>
 

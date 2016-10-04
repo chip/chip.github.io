@@ -1,0 +1,10 @@
+{
+    "name": "Lato",
+    "files": [{
+        "weight": 400,
+        "file": "./fonts/Lato/Lato-Regular.ttf"
+    }, {
+        "weight": 700,
+        "file": "./fonts/Lato/Lato-Bold.ttf"
+    }]
+}

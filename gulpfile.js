@@ -73,6 +73,9 @@ gulp.task('copy', function() {
             'node_modules/font-awesome/fonts/**'
         ])
         .pipe(gulp.dest('fonts'))
+
+    gulp.src(['node_modules/fontfaceobserver/fontfaceobserver.standalone.js'])
+        .pipe(gulp.dest('vendor/fontfaceobserver'))
 })
 
 gulp.task('concat-css', function () {
@@ -90,6 +93,7 @@ gulp.task('concat-js', function () {
       'vendor/jquery/jquery.min.js',
       'vendor/bootstrap/js/bootstrap.min.js',
       'vendor/jquery-easing/jquery.easing.min.js',
+      'vendor/fontfaceobserver/fontfaceobserver.standalone.js',
       'js/freelancer.min.js'
     ])
     .pipe(concat('scripts.min.js'))
